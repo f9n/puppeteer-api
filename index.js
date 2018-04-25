@@ -8,7 +8,10 @@ const app = express();
 const {hashIt, writeFile} = require('./util');
 
 let browser;
-puppeteer.launch({headless: true}).then(async _browser => {
+puppeteer.launch({
+    headless: true,
+    args: ['--no-sandbox', '--disable-setuid-sandbox']
+}).then(async _browser => {
     browser = _browser;
 })
 
