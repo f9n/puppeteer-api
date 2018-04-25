@@ -34,6 +34,7 @@ app.post('/', (req, res) => {
     let links_file = `${link_hash}_links.json`;
     let screenshot_file = `${link_hash}.png`;
     let pdf_file = `${link_hash}.pdf`;
+    console.log(link, link_hash);
     browser.newPage().then(async page => {
         await page.exposeFunction('hashIt', hashIt);
         page.on('console', msg => console.log('PAGE LOG:', msg.text()));
