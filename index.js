@@ -90,12 +90,14 @@ app.post('/', (req, res) => {
 })
 
 const server = app.listen(app.get('port'), () => {
-    console.log(`App listening on port ${server.address().port}`)
+    console.log(`Puppeteer Api listening on port ${server.address().port}`)
 })
 
+/*
 process.on('SIGINT', function() {
     console.log( "\nGracefully shutting down from SIGINT (Ctrl-C)" );
     browser.close();
     server.close();
     process.exit(1);
-  });
+});
+*/
