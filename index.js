@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
 })
 
 app.post('/', (req, res) => {
-    let link = `http://${req.body.link}`;
+    let link = `${req.body.link}`;
     // is_valid_link()
     let link_hash = hashIt(link);
     let content_file = `${link_hash}_content.txt`;
