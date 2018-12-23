@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pleycpl/puppeteer-api.git"
+    "url": "git+https://github.com/f9n/puppeteer-api.git"
   },
-  "author": "pleycpl",
+  "author": "f9n",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/pleycpl/puppeteer-api/issues"
+    "url": "https://github.com/f9n/puppeteer-api/issues"
   },
-  "homepage": "https://github.com/pleycpl/puppeteer-api#readme",
+  "homepage": "https://github.com/f9n/puppeteer-api#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
     "crypto": "^1.0.1",
